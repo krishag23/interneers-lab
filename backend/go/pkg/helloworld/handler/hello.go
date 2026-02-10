@@ -64,6 +64,7 @@ func IsGetMethod(ctx context.Context, w http.ResponseWriter, r *http.Request) bo
 		return true
 	}
 
+	HandleError(ctx, w, r, errors.New("method not allowed"), http.StatusMethodNotAllowed)
 	return false
 }
 

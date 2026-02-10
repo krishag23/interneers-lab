@@ -2,7 +2,7 @@ FROM python:3.14
 
 EXPOSE 8001
 
-WORKDIR /workspace/backend
+WORKDIR /workspace/backend/python
 
 RUN pip install --upgrade pip
 
