@@ -1,11 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
+import "../../static/css/index.css";
+
 import HomePage from "./HomePage";
 
 function App() {
     return (
-        <div>
+        <div className="center">
             <HomePage />
         </div>
     );
